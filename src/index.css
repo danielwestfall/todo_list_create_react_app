@@ -1,0 +1,113 @@
+body {
+    background-color: #757370;
+}
+
+#root {
+    background-color: #2C222E;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
+    width: intrinsic;           
+    width: -moz-max-content;    
+    width: -webkit-max-content; 
+    width: max-content;
+}
+
+.pagetitle {
+    color: #2C222E;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-left: 1em;
+}
+
+.todos {
+    color: #FBF9F9;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    padding: .5em;
+    margin: .1em .1em .1em 1em;
+    background-color: #80654E;
+    width: intrinsic;           
+    width: -moz-max-content;    
+    width: -webkit-max-content; 
+    width: max-content;
+    border-radius: 0px 50px 50px 0px;
+    -webkit-border-radius: 0px 50px 50px 0px;
+    -moz-border-radius: 0px 50px 50px 0px;
+    -ms-border-radius: 0px 50px 50px 0px;
+    -o-border-radius: 0px 50px 50px 0px;
+}
+
+.todos:hover{
+
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: normal;
+    box-shadow:  10px 10px 1px #FBF9F9;
+    animation: fade 1s;
+    -webkit-animation: fade 1s ease-in forwards;
+}
+
+@keyframes fade {
+0% {
+    background-color: #80654E;
+    color: #FBF9F9;
+}
+100% {
+    background-color: #757370;
+    color: #744048;
+}
+}
+
+label {
+    color: #FBF9F9;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    padding: .5em;
+    margin: .1em .1em .1em 1em;
+    width: 45%;
+    animation: slowblink 3s ease-in-out infinite;
+    -webkit-animation: slowblink 3s ease-in-out infinite;
+}
+
+@keyframes slowblink {
+0% {
+    color: #FBF9F9;
+}
+50% {
+    color: #744048;
+}
+100% {
+    color: #FBF9F9;
+}
+}
+
+input {
+    background-color: #757370;
+    color: #FBF9F9;
+    padding: .5em;
+    margin: .5em .1em .5em 1em;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    width: intrinsic;           
+    width: -moz-max-content;    
+    width: -webkit-max-content; 
+    width: max-content;
+    outline: none;
+    border-bottom: 3px #2C222E;
+}
+
+
+
+
+/*white FBF9F9
+//brown 80654E
+//gray 757370
+//purple 744048
+//dark purple 2C222E*/
